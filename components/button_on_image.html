@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- All Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="It-Blocks - Responsive HTML5 Template">
+    <meta name="author" content="It-Blocks">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- The Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main_style.css" />
+
+    <!-- How to Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages_styles/how_to.css" />
+
+    <!-- pages_content Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages_styles/pages_content.css" />
+
+
+    <!-- component Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+
+
+</head>
+
+<body>
+    <!-- Start Common Header -->
+    <div id="header">
+        <!-- the header is rander here -->
+    </div>
+    <!-- End Common Header -->
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" class="container-fluid pl-0 pr-0 maindiv">
+
+        <!-- Start Content Page -->
+        <div id="content" class="page_content how_to " style=" position: relative; overflow: hidden;">
+
+            <div id="mySidenav" class="sidenav fixed-side">
+                <a href="javascript:void(0)" class="closebtn d-none" onclick="closeNav()">&times;</a>
+                <ul id="myMenu">
+                    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search .." title="Type in a category">
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="more_list.html">Upper Par (More)</a></li>
+                    <li><a href="copy_to_clipbourd.html">Copy To Clipbourd</a></li>
+                    <li><a href="fixed_side_nav.html">Fixed Side Nav</a></li>
+                    <li><a href="search_filter.html">Search Filter</a></li>
+                    <li><a href="boxes.html">Boxes</a>
+                        <!--header phone icon ,advantages  -->
+                    </li>
+                    <li><a href="side_nav.html">Side Nav</a>
+                        <!--team, appointments ,services ,blog -->
+                    </li>
+                    <li><a href="paragraph_on_image.html">Paragraph On Image</a></li>
+                    <li><a href="button_on_image.html" class="selected">Button On Image</a></li>
+                    <li><a href="iframe.html">IFrame</a></li>
+                    <li><a href="swiper.html">Swiper</a></li>
+                </ul>
+            </div>
+
+            <div class="intro-div">
+                <div class="left-div-right">
+                    <div class="documentation_intro">
+                        <div style="text-align: left;
+                        padding-bottom: 25px;
+                        margin: auto;
+                        width: 90%;">
+                            <h2>button on image</h2><span class="d-none" onclick="openNav()"><button type="button"
+                                    class="btn btn-component text-uppercase button-component">Choose Your
+                                    Component</button></span>
+                            <hr>
+
+                        </div>
+
+                        <div class="words">
+
+                            <div class="ex-div">
+                                <h3>Shots</h3>
+                            </div>
+                            <div class="content-example">
+                                <div class="diagnostics">
+
+                                    <h1 class="title text-capitalize">Button On Image</h1>
+
+                                    <button type="button" class="btn btn-component text-uppercase how-button special-button" style="width: 160px;
+                                    font-size: 10px;
+                                    margin-left: 20px;">here is a button</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="code">
+
+                            <div>
+                                <div class="tablink html text-uppercase" onclick="openPage('html', this)" id="defaultClose">html
+                                </div>
+                                <div id="html" class="tabcontent">
+
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+                                            &lt;h1 class=&quot;title text-capitalize&quot;&gt;Button On Image&lt;/h1&gt;
+                                                                                &lt;button type=&quot;button&quot; class=&quot;btn btn-component text-uppercase how-button&quot; style=&quot;width: 160px;
+                                                                                font-size: 10px;
+                                                                                margin-left: 20px;&quot;&gt;here is a button&lt;/button&gt;
+                                            </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button> </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tablink css text-uppercase" onclick="openPage('css', this)" id="defaultClose">css
+                                </div>
+                                <div id="css" class="tabcontent">
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+                                                .diagnostics {
+                                                    background-image: url('../../images/background/background-diagnostics.jpg');
+                                                    background-size: cover;
+                                                    background-position: center;
+                                                    background-attachment: fixed;
+                                                    padding: 100px 0;
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                
+                                                .diagnostics .title {
+                                                    color: white;
+                                                    font-size: 40px;
+                                                }
+                                                
+                                                .diagnostics .text {
+                                                    font-size: 20px;
+                                                    color: white;
+                                                    margin-top: 30px;
+                                                    margin-bottom: 30px;
+                                                }
+                                              
+                                                .btn-component {
+                                                  font-size: 13px;
+                                                  background-color: #fff !important;
+                                                  color: #000 !important;
+                                                  border-radius: 25px;
+                                                  padding: 10px 35px;
+                                                  display: block;
+                                                  transition: all .5s ease-in-out;
+                                                  margin-left: 60px;
+                                                }
+                                                
+                                                .diagnostics .btn-component:hover {
+                                                    background-color: #2a93c9;
+                                                    color: white;
+                                                }
+                                                
+                                             
+                                                        </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tablink js d-none text-uppercase" onclick="openPage('js', this)" id="defaultClose">js
+                                </div>
+                                <div id="js" class="tabcontent">
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+
+                                                                        </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- End Content Page -->
+            </div>
+            <!-- End Content Page -->
+        </div>
+    </div>
+    <!-- Start Common Footer -->
+    <div id="footer">
+        <!-- The footer is rander here -->
+    </div>
+    <!-- End Common Footer -->
+
+    <!-- All Used Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.includeHTML.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/translation.js"></script>
+    <script src="../assets/js/ui_effects.js"></script>
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultClose").click();
+    </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            var copy_btn = $('.copy_btn');
+
+            copy_btn.on('click', function() {
+                var copyText = $(this).prev('.copyText'),
+                    movedText = $(this).next('.moved');
+
+                copyText.removeAttr('disabled');
+                copyText.select();
+                document.execCommand("copy");
+                copyText.attr('disabled', 'disabled');
+                movedText.text(copyText.val());
+            });
+
+        });
+    </script>
+</body>
+
+</html>

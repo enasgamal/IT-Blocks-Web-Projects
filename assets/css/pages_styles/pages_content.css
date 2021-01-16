@@ -1,0 +1,73 @@
+/*start of introduction style css*/
+
+.documentation_intro {
+    width: 100%;
+    justify-content: center;
+    display: block;
+}
+
+.documentation_intro h2 {
+    margin-top: 35px;
+}
+
+.documentation_intro hr {
+    margin: auto;
+
+}
+
+.documentation_intro h3 {
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.documentation_intro .words {
+    margin-bottom: 25px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.documentation_intro .ex-div {
+    width: 28%;
+}
+
+.documentation_intro .ex-div h3 {
+    width: 100px;
+    height: 100px;
+    background: #2A93C9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web_dev_icon {
+    display: inline;
+}
+
+.web_dev_icon .web-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.intro-div {
+    width: calc(100% - 200px);
+    float: right;
+}
+
+.html-text-area {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+/*start of introduction style css*/

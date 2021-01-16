@@ -1,0 +1,109 @@
+.footer {
+    background-color: #2A93C9;
+    padding: 50px 0;
+}
+
+.footer h1 {
+    color: rgb(255, 255, 255);
+    font-size: 23px
+}
+
+.footer p {
+    color: rgb(255, 255, 255);
+}
+
+.footer p a {
+    color: rgba(255, 255, 255, .6);
+    font-size: 15px
+}
+
+.footer .sLinks {
+    padding-left: 30px;
+    margin-top: 25px;
+}
+.footer .row img
+{
+    margin-top: 47px;
+    margin-left: -25px;
+}
+.footer .sLinks i {
+    color: #A5A1A1;
+    size: 10px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #FFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .sLinks .facebook :hover {
+    color: white;
+    background-color: #29487d;
+}
+
+.footer .sLinks .linkedin :hover {
+    color: white;
+    background-color: #0073b1
+}
+
+.footer .contact-us {
+    font-size: 30px
+}
+
+.footer a {
+    color: white;
+    margin: 5px;
+    text-decoration: none !important
+}
+
+.footer .contact {
+    padding-left: 60px
+}
+
+.footer .heads {
+    color: white;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.footer hr {
+    border-top: 2px solid #FFF
+}
+
+.footer .privacy {
+    color: rgba(255, 255, 255, .6);
+    padding-left: 80px;
+    padding-top: 10px
+}
+
+html[dir="rtl"] .footer form .custom-btn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media (max-width: 1024px) {
+    .footer .sLinks i {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .contact {
+        padding-left: 0px;
+        padding-top: 30px
+    }
+    .footer .contact-us {
+        padding-left: 12px
+    }
+}
+
+@media (max-width: 425px) {
+    .footer .privacy {
+        padding-left: 10px;
+    }
+}

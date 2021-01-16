@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- All Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="It-Blocks - Responsive HTML5 Template">
+    <meta name="author" content="It-Blocks">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- The Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main_style.css" />
+
+    <!-- How to Page Stylesheet -->
+    <link rel="stylesheet" href="assets/css/pages_styles/how_to.css" />
+
+
+
+
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul id="myMenu">
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <li><a href="components/cards.html">Cards</a></li>
+            <li><a href="components/more_list.html">Upper Par (More)</a></li>
+            <li><a href="components/copy_to_clipbourd.html">Copy To Clipbourd</a></li>
+            <li><a href="components/fixed_side_nav.html">Fixed Side Nav</a></li>
+            <li><a href="components/search_filter.html">Search Filter</a></li>
+            <li><a href="components/boxes.html">Boxes</a>
+                <!--header phone icon ,advantages  -->
+            </li>
+            <li><a href="components/side_nav.html">Side Nav</a>
+                <!--team, appointments ,services ,blog -->
+            </li>
+            <li><a href="components/paragraph_on_image.html">Paragraph On Image</a></li>
+            <li><a href="components/button_on_image.html">Button On Image</a></li>
+            <li><a href="components/iframe.html">IFrame</a></li>
+            <li><a href="components/swiper.html">Swiper</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" class="container-fluid pl-0 pr-0">
+        <!-- Start Common Header -->
+        <div id="header">
+            <!-- the header is rander here -->
+        </div>
+        <!-- End Common Header -->
+
+
+        <!-- Start Content Page -->
+        <div id="content" class="page_content how_to ">
+            <div class="space"></div>
+            <!--start how to section-->
+            <div class="diagnostics">
+                <div class="container">
+                    <h1 class="title text-capitalize">HOW TO<br>Documentation</h1>
+                    <p class="text ">Learn how to make a component with detailes </p>
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()"><button type="button" class="btn btn-component text-uppercase how-button "style="margin-bottom: 40px;">Choose Your
+                            Component</button></span>
+
+                </div>
+            </div>
+            <!--end diagnostics-->
+
+        </div>
+        <!-- End Content Page -->
+
+        <!-- Start Common Footer -->
+        <div id="footer">
+            <!-- The footer is rander here -->
+        </div>
+        <!-- End Common Footer -->
+    </div>
+
+
+    <!-- All Used Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.includeHTML.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/translation.js"></script>
+    <script src="assets/js/ui_effects.js"></script>
+    <script>
+
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+            
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            if(window.width() > 576) {
+                document.getElementById("header").style.marginLeft = "200px";
+                document.getElementById("footer").style.marginLeft = "200px";
+                document.getElementById("content").style.marginLeft = "200px";
+            }
+        }
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("header").style.marginLeft = "0";
+            document.getElementById("footer").style.marginLeft = "0";
+            document.getElementById("content").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <script>
+
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+     // Include Header Html
+     $("#header").loadHTML('pages/header.html');
+    </script>
+</body>
+
+</html>

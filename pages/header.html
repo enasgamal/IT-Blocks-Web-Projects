@@ -1,0 +1,136 @@
+<!-- Start Header -->
+<header>
+    <!-- the main navbar -->
+    <!--start Upperbar -->
+    <div class="upperbar">
+        <div class="container">
+            <div class="row">
+                <!-- website brand logo -->
+                <div class="col-md-4">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo-white.png">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="middle-div center-div">
+                        <div class="icon-div">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="tele-div">
+                            <a class="tele-div" href="tel:+2 012 2311 1961 ">+2 012 2311 1961</a><br>
+                            <a class="tele-div" href="tel: +202 2404 5058"> +202 2404 5058</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="middle-div">
+                        <div class="icon-div">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="tele-div">
+                            <p class="mb-0 lang">16 Mohamed Mandour Street,<br> Rabaa, Nasr City, Cairo, Egypt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end  Upperbar-->
+
+    <!--Start Menu More-->
+
+    <div class="menu_more">
+        <div class="container">
+            <ul id="horizontal">
+                <li><a href="../index.html" style="border-bottom-left-radius: 5px; border-top-left-radius: 5px;">Home </a></li>
+                <li><a href="../how_to.html">How To</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li> <a href="#">Departments</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+
+                <!-- <li><a href="#"> &nbsp  ع</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <!--End Menu More-->
+</header>
+<!-- End Header -->
+<!-- Start Translation Script -->
+<script>
+    $('.translate').click(function() {
+        var lang = $(this).attr('id');
+        if (lang === 'ar') {
+            $('html').attr('lang', 'ar');
+            $('html').attr('dir', 'rtl');
+            $('#ar').css('display', 'none');
+            $('#en').css('display', 'block');
+            $('link[href*="main_style"]').attr('href', 'assets/css/main_style-rtl.css');
+        } else {
+            $('html').attr('lang', 'en');
+            $('html').attr('dir', 'ltr');
+            $('#en').css('display', 'none');
+            $('#ar').css('display', 'block');
+            $('link[href*="main_style"]').attr('href', 'assets/css/main_style.css');
+        }
+        $('.lang').each(function(index, element) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+    });
+
+    //Menu Custimization
+    $(document).ready(function() {
+        console.log($('.navbar').outerWidth());
+        //$('.navbar .navbar-nav li:eq(0) a').css('color', 'red');
+        $('.navbar .navbar-nav li').each(function() {
+            //$(this).eq(0).find('a').css('color', 'red');
+            if ($(this).is(':last-child')) {
+                console.log($(this).outerWidth());
+                $(this).find('a').css('color', 'red');
+            }
+        });
+    });
+</script>
+<!-- End Translation Script -->
+
+<!--start Menu More script-->
+<script>
+    $(function() {
+        alignMenu();
+
+        $(window).resize(function() {
+            $("#horizontal").append($("#horizontal li.hideshow ul").html());
+            $("#horizontal li.hideshow").remove();
+            alignMenu();
+        });
+
+        function alignMenu() {
+            var w = 0;
+            var mw = $("#horizontal").width() - 150;
+            var i = -1;
+            var menuhtml = '';
+            jQuery.each($("#horizontal").children(), function() {
+                i++;
+                w += $(this).outerWidth(true);
+                if (mw < w) {
+                    menuhtml += $('<div>').append($(this).clone()).html();
+                    $(this).remove();
+                }
+            });
+            $("#horizontal").append(
+                '<li  style="position:relative;" href="#" class="hideshow">' +
+                '<a href="#" style="border-bottom-right-radius: 7px;border-top-right-radius: 7px;" >more ' +
+                '<span style="font-size:12px">&#8595;</span>' +
+                '</a><ul>' + menuhtml + '</ul></li>');
+            $("#horizontal li.hideshow ul").css("top",
+                $("#horizontal li.hideshow").outerHeight(true) + "px");
+            $("#horizontal li.hideshow").click(function() {
+                $(this).children("ul").toggle();
+            });
+        }
+    });
+</script>
+<!--end Menu More script-->

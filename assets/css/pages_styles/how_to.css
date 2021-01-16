@@ -1,0 +1,306 @@
+header {
+    position: relative;
+    background-color: #2684b5;
+}
+
+
+/*span button
+{
+    /*position: fixed;*/
+
+
+/* left: 35px;
+    background-color:transparent;
+    color: white;
+    font-size: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
+    z-index: 4;
+    top: 105px;
+   border: none;
+}*/
+
+
+/* start how to section */
+
+.diagnostics {
+    background-image: url('../../images/used-components/components.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*padding: 100px 0;
+    display: flex;*/
+    align-items: center;
+}
+
+.diagnostics .title {
+    color: white;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.diagnostics .text {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    .diagnostics {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .diagnostics .title {
+        font-size: 25px
+    }
+    .diagnostics .text {
+        font-size: 16px
+    }
+    .btn-component {
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+    .btn-component.how-button
+    {
+        margin-left: 40px;
+    }
+    .button-component 
+    {
+        margin-left: 85px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .btn-component {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-component.how-button {
+        font-size: 13px;
+        background-color: #fff !important;
+        color: #000 !important;
+        border-radius: 25px;
+        padding: 10px 35px;
+        display: initial !important;
+        transition: all .5s ease-in-out;
+        /* margin-top: 300px; */
+        margin-bottom: 15px;
+        font-weight: 600;
+        left: 122px;
+        margin-left: 50px !important;
+        /* margin-top: 20px; */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-component.how-button {
+        font-size: 13px;
+        background-color: #fff !important;
+        color: #000 !important;
+        border-radius: 25px;
+        padding: 10px 35px;
+        display: initial !important;
+        transition: all .5s ease-in-out;
+        /* margin-top: 300px; */
+        margin-bottom: 15px;
+        font-weight: 600;
+        left: 122px;
+        margin-left: 100px !important;
+        /* margin-top: 20px; */
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .btn-component {
+        font-size: 13px;
+        background-color: #fff !important;
+        color: #000 !important;
+        border-radius: 25px;
+        padding: 10px 35px;
+        display: initial !important;
+        transition: all .5s ease-in-out;
+        /* margin-top: 300px; */
+        margin-bottom: 15px;
+        font-weight: 600;
+        left: 122px;
+        margin-left: 50px !important;
+        /* margin-top: 20px; */
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+    .btn-component.how-button{
+        margin-left: 120px !important;
+    }
+}
+@media (min-width: 1199px) {
+    .btn-component.special-button{
+        margin-left: 120px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-component {
+        margin-left: 50px !important;
+    }
+}
+
+.btn-component {
+    font-size: 13px;
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 25px;
+    padding: 10px 35px;
+    display: initial !important;
+    transition: all .5s ease-in-out;
+    /*margin-top: 300px;*/
+    margin-bottom: 15px;
+    font-weight: 600;
+    left: 122px;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+
+/* end how to section */
+
+
+/* The side navigation menu */
+
+.maindiv {
+    overflow: hidden;
+}
+
+
+/*#content
+{
+  overflow: hidden;
+}*/
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 55px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.fixed-side {
+    height: 100%;
+    ;
+    width: 200px;
+    /* 0 width - change this with JavaScript */
+    position: absolute;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 55px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 2px 5px 0px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #797676;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #2684b5;
+    text-shadow: 0px 0px 1px #2684b5;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -2px;
+    right: 15px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Style the search box */
+
+#mySearch {
+    width: 92%;
+    font-size: 17px;
+    padding: 7px;
+    border: 1px solid #ddd;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/* Style the navigation menu */
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Style the navigation links */
+
+#myMenu li a {
+    padding: 10px;
+    text-decoration: none;
+    /*color: black;*/
+    display: block
+}
+
+#myMenu li a:hover {
+    background-color: #eee;
+}
+
+
+/*end side nav style*/

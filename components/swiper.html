@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- All Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="It-Blocks - Responsive HTML5 Template">
+    <meta name="author" content="It-Blocks">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- Lato English Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap">
+
+    <!-- The Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main_style.css" />
+
+    <!-- How to Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages_styles/how_to.css" />
+
+    <!-- component Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/pages_styles/pages_content.css" />
+
+
+    <!-- component Page Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+
+
+</head>
+
+<body>
+    <!-- Start Common Header -->
+    <div id="header">
+        <!-- the header is rander here -->
+    </div>
+    <!-- End Common Header -->
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" class="container-fluid pl-0 pr-0 maindiv">
+
+        <!-- Start Content Page -->
+        <div id="content" class="page_content how_to " style=" position: relative;overflow: hidden;">
+
+            <div id="mySidenav" class="sidenav fixed-side">
+                <a href="javascript:void(0)" class="closebtn d-none" onclick="closeNav()">&times;</a>
+                <ul id="myMenu">
+                    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search .." title="Type in a category">
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="more_list.html">Upper Par (More)</a></li>
+                    <li><a href="copy_to_clipbourd.html">Copy To Clipbourd</a></li>
+                    <li><a href="fixed_side_nav.html">Fixed Side Nav</a></li>
+                    <li><a href="search_filter.html">Search Filter</a></li>
+                    <li><a href="boxes.html">Boxes</a>
+                        <!--header phone icon ,advantages  -->
+                    </li>
+                    <li><a href="side_nav.html">Side Nav</a>
+                        <!--team, appointments ,services ,blog -->
+                    </li>
+                    <li><a href="paragraph_on_image.html">Paragraph On Image</a></li>
+                    <li><a href="button_on_image.html">Button On Image</a></li>
+                    <li><a href="iframe.html">IFrame</a></li>
+                    <li><a href="swiper.html" class="selected">Swiper</a></li>
+                </ul>
+            </div>
+
+            <div class="intro-div">
+                <div class="left-div-right">
+                    <div class="documentation_intro">
+                        <div style="text-align: left;
+                        padding-bottom: 25px;
+                        margin: auto;
+                        width: 90%;">
+                            <h2>Swiper</h2><span class="d-none" onclick="openNav()"><button type="button"
+                                    class="btn btn-component text-uppercase button-component">Choose Your
+                                    Component</button></span>
+                            <!--header 1-->
+                            <hr>
+                        </div>
+
+                        <div class="words">
+
+                            <div class="ex-div">
+                                <h3>Shots</h3>
+                            </div>
+                            <div class="content-example">
+                                <img class="icons-pars" src="../assets/images/components/swiper.PNG" style="    width: 100%;">
+                            </div>
+                        </div>
+
+                        <div class="code">
+
+                            <div>
+                                <div class="tablink html text-uppercase" onclick="openPage('html', this)" id="defaultClose">html
+                                </div>
+                                <div id="html" class="tabcontent">
+
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+                                                &lt;!-- Start Main Swiper --&gt;
+                                                &lt;div class=&quot;main_swiper&quot;&gt;
+                                                    &lt;div class=&quot;container-fluid p-0&quot;&gt;
+                                                        &lt;div class=&quot;swiper-container main_slider&quot; dir=&quot;rtl&quot;&gt;
+                                                            &lt;div class=&quot;swiper-wrapper&quot;&gt;
+                                                                &lt;div class=&quot;swiper-slide&quot;&gt;
+                                                                    &lt;img src=&quot;assets/images/slider/slide-01.jpg&quot; alt=&quot;slide_01&quot; /&gt;
+                                                                    &lt;div class=&quot;slide_content d-none d-sm-block&quot;&gt;
+                                                                        &lt;div class=&quot;container&quot;&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_care&quot;&gt;
+                                                                                Take Care of
+                                                                            &lt;/h3&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_health&quot;&gt;
+                                                                                Your health
+                                                                            &lt;/h3&gt;
+                                                                            &lt;p class=&quot;lang desc&quot; key=&quot;slide_desc&quot;&gt;
+                                                                                At Medina, we are dedicated to diagnosing all kinds of diseases.
+                                                                            &lt;/p&gt;
+                                                                            &lt;button class=&quot;btn btn-component text-uppercase lang&quot; key=&quot;slide_btn&quot;&gt;Make an
+                                                                                appointment&lt;/button&gt;
+                                                                        &lt;/div&gt;
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;swiper-slide&quot;&gt;
+                                                                    &lt;img src=&quot;assets/images/slider/slide-02.jpg&quot; alt=&quot;slide_02&quot; /&gt;
+                                                                    &lt;div class=&quot;slide_content d-none d-sm-block&quot;&gt;
+                                                                        &lt;div class=&quot;container&quot;&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_care&quot;&gt;
+                                                                                Take Care of
+                                                                            &lt;/h3&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_health&quot;&gt;
+                                                                                Your health
+                                                                            &lt;/h3&gt;
+                                                                            &lt;p class=&quot;lang desc&quot; key=&quot;slide_desc&quot;&gt;
+                                                                                At Medina, we are dedicated to diagnosing all kinds of diseases.
+                                                                            &lt;/p&gt;
+                                                                            &lt;button class=&quot;btn btn-component text-uppercase lang&quot; key=&quot;slide_btn&quot;&gt;Make an                                                                                appointment&lt;/button&gt;
+                                                                        &lt;/div&gt;
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;swiper-slide&quot;&gt;
+                                                                    &lt;img src=&quot;assets/images/slider/slide-03.jpg&quot; alt=&quot;slide_03&quot; /&gt;
+                                                                    &lt;div class=&quot;slide_content d-none d-sm-block&quot;&gt;
+                                                                        &lt;div class=&quot;container&quot;&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_care&quot;&gt;
+                                                                                Take Care of
+                                                                            &lt;/h3&gt;
+                                                                            &lt;h3 class=&quot;text-capitalize lang&quot; key=&quot;slide_health&quot;&gt;
+                                                                                Your health
+                                                                            &lt;/h3&gt;
+                                                                            &lt;p class=&quot;lang desc&quot; key=&quot;slide_desc&quot;&gt;
+                                                                                At Medina, we are dedicated to diagnosing all kinds of diseases.
+                                                                            &lt;/p&gt;
+                                                                            &lt;button class=&quot;btn btn-component text-uppercase lang&quot; key=&quot;slide_btn&quot;&gt;Make an
+                                                                                appointment&lt;/button&gt;
+                                                                        &lt;/div&gt;
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                
+                                                            &lt;!--&lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+                                                            &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;--&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;container&quot;&gt;
+                                                        &lt;div class=&quot;swiper-pagination_container&quot;&gt;
+                                                            &lt;!-- Add Pagination --&gt;
+                                                            &lt;div class=&quot;container&quot;&gt;
+                                                                &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;!-- End Main Swiper --&gt;
+                                                        </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tablink css text-uppercase" onclick="openPage('css', this)" id="defaultClose">css
+                                </div>
+                                <div id="css" class="tabcontent">
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+                                                /*Start Main Swiper*/
+                                                .main_swiper .slide_content {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    top: 50%;
+                                                    -webkit-transform: translateY(-50%);
+                                                    -moz-transform: translateY(-50%);
+                                                    -o-transform: translateY(-50%);
+                                                    transform: translateY(-50%);
+                                                    direction: ltr;
+                                                    color: #FFF
+                                                }
+                                                html[dir="rtl"] .main_swiper .slide_content {
+                                                    direction: rtl;
+                                                }
+                                                .main_swiper .slide_content h3 {
+                                                    font-size: 2.604vw
+                                                }
+                                                .main_swiper .slide_content .desc {
+                                                    width: 25%;
+                                                    font-size: 16px;
+                                                    margin: 1.302vw 0;
+                                                }
+                                                .main_swiper .swiper-pagination_container {
+                                                    position: relative;
+                                                }
+                                                .main_swiper .swiper-pagination_container .swiper-pagination {
+                                                    position: absolute;
+                                                    bottom: 175px;
+                                                }
+                                                .main_swiper .swiper-pagination-bullet {
+                                                    margin: 0 10px;
+                                                    background-color: #2A93C9;
+                                                    opacity: 1;
+                                                }
+                                                .main_swiper .swiper-pagination-bullet-active {
+                                                    box-shadow: 0 0 1px 6px rgba(42, 147, 201, .3);
+                                                    outline: none;
+                                                }
+                                                /*End Main Swiper*/
+                                                        </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="tablink js text-uppercase" onclick="openPage('js', this)" id="defaultClose">js
+                                </div>
+                                <div id="js" class="tabcontent">
+                                    <!-- The text field -->
+                                    <div class="copy_container">
+                                        <textarea class="copyText" disabled>
+                                                <script>
+                                                    var swiper = new Swiper('.main_slider', {
+                                                        pagination: {
+                                                            el: '.swiper-pagination',
+                                                            clickable: true,
+                                                        },
+                                                        loop: true,
+                                                        speed: 1500,
+                                                        autoplay: {
+                                                            enabled: true,
+                                                            delay: 5000,
+                                                            disableOnInteraction: false,
+                                                        }
+                                                    });
+                                                    var testimonials_slider = new Swiper('.testi_slider', {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 50,
+                                                        // init: false,
+                                                        pagination: {
+                                                            el: '.swiper-pagination',
+                                                            clickable: true,
+                                                        },
+                                                        breakpoints: {
+                                                            992: {
+                                                                slidesPerView: 1,
+                                                                spaceBetween: 40,
+                                                            }
+                                                        }
+                                                    });
+                                                </script>
+                                                
+                                                                        </textarea>
+                                        <button class="copy_btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fas fa-copy"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- End Content Page -->
+            </div>
+            <!-- End Content Page -->
+        </div>
+    </div>
+    <!-- Start Common Footer -->
+    <div id="footer">
+        <!-- The footer is rander here -->
+    </div>
+    <!-- End Common Footer -->
+
+    <!-- All Used Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.includeHTML.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/translation.js"></script>
+    <script src="../assets/js/ui_effects.js"></script>
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultClose").click();
+    </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            var copy_btn = $('.copy_btn');
+
+            copy_btn.on('click', function() {
+                var copyText = $(this).prev('.copyText'),
+                    movedText = $(this).next('.moved');
+
+                copyText.removeAttr('disabled');
+                copyText.select();
+                document.execCommand("copy");
+                copyText.attr('disabled', 'disabled');
+                movedText.text(copyText.val());
+            });
+
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.main_slider', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                enabled: true,
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+        var testimonials_slider = new Swiper('.testi_slider', {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

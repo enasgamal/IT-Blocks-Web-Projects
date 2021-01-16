@@ -1,0 +1,768 @@
+.background {
+    background-color: #f1f3f9
+}
+
+
+/*Start Main Swiper*/
+
+.main_swiper .slide_content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    direction: ltr;
+    color: #FFF
+}
+
+.main_swiper .swiper-slide:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.swiper-img {
+    height: 760px;
+    width: 1920px
+}
+
+html[dir="rtl"] .main_swiper .slide_content {
+    direction: rtl;
+}
+
+.main_swiper .slide_content h1 {
+    font-size: 4.604vw;
+    position: relative;
+}
+
+.main_swiper .slide_content .desc {
+    position: relative;
+    width: 25%;
+    font-size: 20px;
+    margin: 1.302vw 0;
+}
+
+.main_swiper .swiper-pagination_container {
+    position: relative;
+}
+
+.main_swiper .swiper-pagination_container .swiper-pagination {
+    position: relative;
+    bottom: 90px;
+}
+
+.main_swiper .swiper-pagination-bullet {
+    margin: 0 10px;
+    background-color: #2A93C9;
+    opacity: 1;
+}
+
+.main_swiper .swiper-pagination-bullet-active {
+    box-shadow: 0 0 1px 6px rgba(42, 147, 201, .3);
+    outline: none;
+}
+
+.main_swiper .swiper-slide .btn {
+    position: absolute
+}
+
+.main_swiper .lang {
+    color: #2A93C9
+}
+
+@media (max-width: 1024px) {
+    .main_swiper .swiper-slide>.swiper-img {
+        width: 1007px;
+        width: 100%;
+    }
+    .main_swiper .slide_content h1 {
+        font-size: 3.604vw;
+        margin-top: -75px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main_swiper .swiper-slide .btn {
+        margin-top: -6px;
+        margin-left: 3px;
+    }
+    .main_swiper .slide_content h1 {
+        text-align: center;
+        font-size: 10.604vw;
+        margin-top: 164px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_swiper .desc {
+        visibility: hidden;
+    }
+    .main_swiper .swiper-slide>.swiper-img {
+        width: 751px;
+        width: 100%;
+    }
+    .main_swiper .slide_content h1 {
+        text-align: center;
+        font-size: 6.604vw;
+        margin-top: 60px;
+    }
+    .main_swiper .swiper-slide .btn {
+        position: absolute;
+        top: 61%;
+        left: 35%;
+    }
+    .main_swiper .swiper-pagination_container .swiper-pagination {
+        bottom: 40px;
+        position: relative;
+    }
+}
+
+@media (max-width: 375px) {
+    .main_swiper .swiper-slide>.swiper-img {
+        width: 359px;
+        height: 359px;
+    }
+    .main_swiper .swiper-slide .btn {
+        margin-top: -6px;
+        margin-left: -45px;
+    }
+    .main_swiper .slide_content h1 {
+        text-align: center;
+        font-size: 10.604vw;
+        margin-top: 164px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_swiper .swiper-slide>.swiper-img {
+        width: 310px;
+        height: 303px;
+    }
+}
+
+
+/*End Main Swiper*/
+
+
+/*Start table*/
+
+.table {
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+    width: 100%;
+    list-style: none
+}
+
+.table .table_item {
+    transition: all .3s ease-in-out;
+}
+
+.table .table_item .card-header i {
+    margin-right: 10px
+}
+
+.table .table_item:hover {
+    transform: translateY(-48px);
+}
+
+.table .table_item .card {
+    padding: 10px 5px;
+    color: #FFF;
+    height: 290px;
+}
+
+.table .table_item .card-text {
+    text-align: left
+}
+
+.table .row>div .card {
+    border-radius: 0;
+}
+
+.table .row>div .card p {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e5e5e5
+}
+
+.table .row>div {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.table .row>div:nth-child(odd) .card {
+    background-color: #2684B5
+}
+
+.table .row>div:nth-child(even) .card {
+    background-color: #2A93C9
+}
+
+.table .table_item .card-footer {
+    background: #FFF;
+    border-top: none;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.table .table_item:hover .card-footer {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.table .row>div:nth-child(3) .card-footer {
+    border-bottom-right-radius: 10px
+}
+
+.table .row>div:nth-child(1) .card-footer {
+    border-bottom-left-radius: 10px
+}
+
+.table .table_item .card-footer:hover {
+    background: #272727;
+    color: #FFF;
+}
+
+.table .table_item .card-footer {
+    background-color: #FFFFFF;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0;
+    display: block;
+}
+
+.table .table_item:hover,
+.table .table_item:hover .card-footer {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.table a {
+    text-decoration: none !important
+}
+
+.table .table_item .card-body {
+    padding: 1rem;
+}
+.card-body ul
+{
+    list-style-type: circle;
+}
+.table .row>div:nth-child(3) .card {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table .row>div:nth-child(1) .card {
+    background-color: #2684B5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .table .table_item {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+ }
+ @media (max-width: 767px) {
+    .table .row .table_item .card {
+        border-radius: 10px;
+    }
+    .table .row .table_item .card-footer {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .table {
+        bottom: 0;
+        padding-top: 50px
+    }
+ }
+
+/*End table*/
+
+
+/*Enas*/
+
+
+/*advantages css*/
+
+.advantages {
+    width: 100%;
+    background-color: #f1f3f9;
+}
+
+.advantages .paragraph {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.advantages .card1 {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.advantages .icon-image {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(196, 186, 186);
+    border-radius: 50%;
+    border-color: rgb(170, 166, 162);
+    border-width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.advantages .icon1 {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages .icon1>i {
+    color: #2A93C9;
+    font-size: 40px;
+    text-align: center;
+}
+
+.advantages .paragraph-card1 {
+    height: 40%;
+    width: 100%;
+    background-color: #f1f3f9
+}
+
+.advantages .paragraph-card1 h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.advantages .paragraph-card1 p {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*end advantages css*/
+
+
+/*Nada*/
+
+
+/* start used-component */
+
+.used-component {
+    background-image: url('../../images/used-components/components.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.used-component .title {
+    color: white;
+    font-size: 40px;
+}
+
+.used-component .text {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.used-component .btn-component:hover {
+    background-color: #2a93c9;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .used-component {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .used-component .title {
+        font-size: 25px
+    }
+    .used-component .text {
+        font-size: 16px
+    }
+}
+
+
+/* end used-component */
+
+
+/*start of languages css*/
+
+.languages {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.languages .languages_paragraph {
+    text-align: center;
+    font-size: 16px;
+    color: #868686;
+    margin: 25px auto 50px;
+}
+
+.languages .item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.languages img {
+    border-radius: 70px;
+    width: 90%;
+}
+
+.languages .bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    height: 35px;
+    width: 80%;
+    background: #383535;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .languages img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .languages .bottom-right {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0
+    }
+    .languages .bottom-right h5 {
+        margin-top: -5px
+    }
+}
+
+.languages .bottom-right:hover {
+    background: #2684B5;
+}
+
+.languages .bottom-right h5 {
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 0;
+    height: 100%;
+    line-height: 35px;
+    font-weight: 600;
+}
+
+.languages .bottom-right:hover h5 {
+    background: #2A93C9;
+    color: white;
+}
+
+.languages .bottom-right .fa-arrow-right {
+    color: transparent;
+    margin-left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.languages .bottom-right:hover .fa-arrow-right {
+    color: #FFF;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+
+/*end of languages css*/
+
+
+/*Start our team*/
+
+@media (min-width: 992px) {
+    .our-team {
+        margin-bottom: -50px
+    }
+}
+
+.our-team .dr_card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team .dr_card>div.female-profile {
+    background-color: #2a93c9;
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .dr_card>div.male-profile {
+    background-color: #2684b4;
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .dr_card>div.male-profile>h3,
+.our-team .dr_card>div.female-profile>h3 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 0px;
+    height: 55px;
+}
+
+.our-team .dr_card>div.male-profile>p,
+.our-team .dr_card>div.female-profile>p {
+    font-size: 15px;
+    line-height: 21px;
+    opacity: 0.4;
+    margin: 0px;
+    height: 40px
+}
+
+.our-team .dr_card>.f-profile {
+    background-color: #FFFFFF;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    opacity: 1;
+    display: block;
+}
+
+.our-team .f-profile a {
+    text-decoration: none !important
+}
+
+.our-team .dr_card .faces {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.our-team .male-profile>h3,
+.our-team .female-profile>h3 {
+    color: white;
+}
+
+.our-team .male-profile>p,
+.our-team .female-profile>p {
+    color: white;
+    opacity: 1
+}
+
+.our-team .dr_card:hover>div.male-profile,
+.our-team .dr_card:hover>div.female-profile,
+.our-team .dr_card:hover>.f-profile {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.our-team .dr_card>.f-profile:hover {
+    background-color: #000;
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .components .btn-components {
+    display: inline-flex;
+    }
+
+    .our-team .dr_card>div.female-profile {
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+        height: 100px;
+    }
+    .our-team .dr_card>div.male-profile {
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+        height: 100px;
+    }
+    .our-team .dr_card>.f-profile {
+        background-color: #FFFFFF;
+        color: black;
+        line-height: 50px;
+        text-align: center;
+    }
+    .our-team .dr_card>.f-profile :hover {
+        background-color: #000;
+    }
+    .our-team .dr_card {
+        max-height: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .our-team .team {
+        padding: 0px;
+    }
+    .our-team .dr_card>.f-profile {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-team .dr_card:hover>div.male-profile,
+    .our-team .dr_card:hover>div.female-profile,
+    .our-team .dr_card:hover>.f-profile {
+        transition: none;
+        transform: none;
+    }
+    .our-team .team {
+        margin-bottom: 20px
+    }
+}
+
+@media (max-width: 768px) {
+    .our-team .dr_card {
+        margin-bottom: 15px
+    }
+}
+
+
+/*End our team*/
+
+
+/*start components*/
+
+.components {
+    padding: 70px 0;
+}
+
+.components .card-body {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.components .card-title {
+    font-size: 19px;
+    font-weight: bold
+}
+
+.components .focus {
+    overflow: hidden;
+}
+
+.components .focus img {
+    transition: all 0.33s ease-in-out;
+    width: 100%
+}
+
+.components .focus img:hover {
+    transform: scale(1.1);
+}
+
+.components .card-date {
+    color: #868686;
+}
+
+.components .view {
+    color: #2a93c9
+}
+
+.components .view:hover {
+    color: black
+}
+
+.components .card-text {
+    color: black;
+    text-align: left
+}
+
+.components .btn-components {
+    background-color: #2a93c9 !important;
+    border: none;
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.components .btn-components:hover {
+    background-color: #272727 !important;
+    color: white
+}
+
+.components .centered {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px
+}
+
+.components .btn-components:hover {
+    background-color: black
+}
+
+@media (max-width: 991px) {
+    .components .item {
+        margin-bottom: 20px
+    }
+}
+
+@media (max-width: 576px) {
+    .components .components-title {
+        padding: 50px 0;
+        font-size: 25px
+    }
+    .components .card-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .components .card-body {
+        margin-bottom: 15px
+    }
+}
+
+
+/*end components*/
+
+
+/*Start Map*/
+
+.map iframe {
+    width: 100%;
+}
+
+
+/*End Map*/
